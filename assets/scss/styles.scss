@@ -1,0 +1,198 @@
+$text-font:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.container{
+    width: 88%;
+    margin: 0 auto;
+}
+body{
+    position: relative;
+}
+/*Header*/
+header{
+    background: transparent;
+    padding: 30px 0;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+    nav ul li{
+        margin: 0 26px;
+        a{
+            font-family: $text-font;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    .cv-btn{
+        text-decoration: none;
+        color: #ffffff;
+        background-color: brown;
+        border-radius: 50%;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: $text-font;
+    }
+    .mobile-menu-btn {
+        display: none;
+        img{
+            max-width: 30px;
+        }
+    }
+    
+}
+header .mobile-nav{background: #ffffff;}
+header .mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    align-items: flex-start;
+    nav{
+        width: 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        align-items: flex-start;
+        list-style: none;
+        width: 100%;
+    }
+    nav ul li{
+        padding: 20px 6%;
+        width: 100%;
+        transition: ease-in-out .5ms;
+        &:hover {
+            background-color:yellow;
+        }
+        a{
+            font-family: $text-font;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+            
+        }
+    }
+    .cv-btn{
+        text-decoration: none;
+        color: #ffffff;
+        background-color: brown;
+        border-radius: 50%;
+        padding: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: $text-font;
+    }
+}
+header .open{
+    display: flex;
+}
+
+.top-section{
+    .container{
+        width: 88%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .container .text-content{
+        h4{
+            font-size: 38px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h1{
+            font-family: Righteous;
+            font-size: 65px;
+        }
+        p{
+            font-size: 21px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .btn-block{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .btn-block a {
+            margin-right: 15px;
+            padding: 8px 30px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn-block .cta{
+            border: 1px solid green;
+            text-decoration: none;
+        }
+        .sales-pitch{
+            font-style: italic;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 300;
+            width: 75%;
+            font-size: 18px
+        }
+    }
+
+    .container .img-content .social-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-self: flex-end;
+        a{
+            text-decoration: none;
+            margin-left: 30px;
+        }
+        a .div{
+            background: greenyellow;
+            display: table;
+            border-radius: 50%;
+            transition: ease-in-out .5ms;
+            &:hover {
+                background-color:rgb(0, 204, 255);
+            }
+        }
+        
+
+        a .div img{
+            width: 46px;
+            vertical-align: bottom;
+        }
+    }
+}
+
+
+
+/*Responsive*/
+@media(max-width:850px) {
+    header{
+        background: pink;
+        padding: 18px 0 0;
+        position: sticky;
+        top: 0;
+    }
+    header .container nav{
+        display: none;
+    }
+    header .container .logo{
+        flex-grow: 1;
+    }
+    header .container .mobile-menu-btn{
+        display: block;
+
+    }
+    header .container .cv-btn{
+        display: none;
+    }
+}

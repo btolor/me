@@ -1,0 +1,191 @@
+.container {
+  width: 88%;
+  margin: 0 auto;
+}
+
+body {
+  position: relative;
+}
+
+/*Header*/
+header {
+  background: transparent;
+  padding: 30px 0;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+header .container nav ul li {
+  margin: 0 26px;
+}
+header .container nav ul li a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+header .container .cv-btn {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: brown;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header .container .mobile-menu-btn {
+  display: none;
+}
+header .container .mobile-menu-btn img {
+  max-width: 30px;
+}
+
+header .mobile-nav {
+  background: #ffffff;
+}
+
+header .mobile-nav {
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  align-items: flex-start;
+}
+header .mobile-nav nav {
+  width: 100%;
+}
+header .mobile-nav nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-items: flex-start;
+  list-style: none;
+  width: 100%;
+}
+header .mobile-nav nav ul li {
+  padding: 20px 6%;
+  width: 100%;
+  transition: ease-in-out 0.5ms;
+}
+header .mobile-nav nav ul li:hover {
+  background-color: yellow;
+}
+header .mobile-nav nav ul li a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+header .mobile-nav .cv-btn {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: brown;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header .open {
+  display: flex;
+}
+
+.top-section .container {
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+.top-section .container .text-content h4 {
+  font-size: 38px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.top-section .container .text-content h1 {
+  font-family: Righteous;
+  font-size: 65px;
+}
+.top-section .container .text-content p {
+  font-size: 21px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.top-section .container .text-content .btn-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.top-section .container .text-content .btn-block a {
+  margin-right: 15px;
+  padding: 8px 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.top-section .container .text-content .btn-block .cta {
+  border: 1px solid green;
+  text-decoration: none;
+}
+.top-section .container .text-content .sales-pitch {
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  width: 75%;
+  font-size: 18px;
+}
+.top-section .container .img-content .social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+}
+.top-section .container .img-content .social-links a {
+  text-decoration: none;
+  margin-left: 30px;
+}
+.top-section .container .img-content .social-links a .div {
+  background: greenyellow;
+  display: table;
+  border-radius: 50%;
+  transition: ease-in-out 0.5ms;
+}
+.top-section .container .img-content .social-links a .div:hover {
+  background-color: rgb(0, 204, 255);
+}
+.top-section .container .img-content .social-links a .div img {
+  width: 46px;
+  vertical-align: bottom;
+}
+
+/*Responsive*/
+@media (max-width: 850px) {
+  header {
+    background: pink;
+    padding: 18px 0 0;
+    position: sticky;
+    top: 0;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .logo {
+    flex-grow: 1;
+  }
+  header .container .mobile-menu-btn {
+    display: block;
+  }
+  header .container .cv-btn {
+    display: none;
+  }
+}
